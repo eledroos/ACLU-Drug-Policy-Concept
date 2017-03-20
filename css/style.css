@@ -109,6 +109,12 @@ img{
     padding-bottom: 40px;
 }
 
+.container {
+  -webkit-animation: fade-in 1.2s ease-in-out both;
+  -moz-animation: fade-in 1.2s ease-in-out both;
+  animation: fade-in 1.2s ease-in-out both;
+}
+
 .header-subtitle {
     font-family:'Open Sans';
     font-weight: 600;
@@ -224,6 +230,44 @@ li:before {
     font-size: 18;
     content: "\f099";
     color: #FE3824;
+}
+
+.circle-red {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FE3824;
+}
+
+.circle-black {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+}
+
+.circle-white {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.circle-legend {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
 }
 
 .donation-amounts {
