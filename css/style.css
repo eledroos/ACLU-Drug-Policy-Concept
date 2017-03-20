@@ -60,6 +60,33 @@ img{
     padding: 10px;
 }
 
+/* Button Styles */
+
+.year-buttons {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #FE3824;
+  font-family: 'Open Sans';
+  width: auto;
+  height: auto;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #000000;
+  border-top: 3px solid #000000;
+  border-left: 0px solid #000000;
+  border-bottom: 0px solid #000000;
+  border-right: 0px solid #000000;
+  outline: none;
+  padding-bottom: 40px;
+}
+
+.year-buttons:hover, .year-buttons:active {
+  border-top: 3px solid #FFFFFF;
+
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
 /* text styles */
 
 .header {
