@@ -7,6 +7,8 @@
 
 <!--D3 library-->
 <script src="js/d3.v3.min.js" charset="utf-8"></script>
+<script src="data/boston_neighborhoods.json"></script>
+
 
 <meta charset="utf-8">
 <meta name="author" content="Nasser Eledroos">
@@ -111,15 +113,38 @@
 					<h2 class="topics-small">Racist</h2>
 				</div>
 			</div>
-			<!--"content ~ might need another row for the map - get to that later?-->
-			<div class="content-row">
-				<div class="col-md-6" style="padding-left:0px;">
+			<div class="row">
+				<div class="col-md-8" style="padding-top: 30px;">
 					<h2 class="fact">Boston drug enforcement targets people of color.</h2>
 				</div>
-				<div class="col-md-12">
-					<img src="img/map.png" alt="map-placeholder" height="!00%" width="100%">
 			</div>
-		</div>
+			<div class="content-row">
+				<div class="col-md-4">
+					<button class="year-buttons" onclick"#">Last Week</button>
+					<button class="year-buttons" onclick"#">2016</button>
+					<button class="year-buttons" onclick"#">2015</button>
+					<button class="year-buttons" onclick"#">2014</button>
+					<div style="padding-bottom: 10px;">
+						<div class="circle-red"></div>
+						<h2 class="circle-legend">Drug Policing Incident</h2>
+					</div>
+					<div style="padding-bottom: 10px;">
+						<div class="circle-black"></div>
+						<h2 class="circle-legend">People of Color</h2>
+					</div>
+					<div style="padding-bottom: 10px;">
+						<div class="circle-white"></div>
+						<h2 class="circle-legend">White People</h2>
+					</div>
+					<h2 class="source" style="padding-top: 20px; padding-bottom: 5px;">Boston Police Department</h2>
+					<h2 class="source">US Census</h2>
+				</div>
+				<div class="col-md-8">
+					<div class="racism">
+						<script type="text/javascript" src="js/boston_racism_drug_map.js"></script>
+					</div>
+				</div>
+			</div>
 	</section>
 	<!--expensive section-->
 	<section class="divider" id="expensive">
