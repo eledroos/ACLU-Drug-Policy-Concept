@@ -8,7 +8,6 @@ var titleArray = ["Incarceration", "Methadone Treatment"];
 var subtitleArray = ["1 year, MA Corrections", "1 year, Drug Rehab Council"];
 var colors = ["#FE3824","#D8D8D8"];
 
-// Create variable for the SVG
 var svg = d3.select(".expensive").append("svg")
           .attr("height","350")
           .attr("width","600");
@@ -24,7 +23,6 @@ svg.selectAll("rect")
           .attr("y", function(d, i) {return 300 - (d)})
           .style('fill', function(d, i){return d>100?'#FE3824':'#D8D8D8';}); // Sets to red if d returns above 100, otherwise gray.
 
-
 // Select, append to SVG, and add attributes to text
 svg.selectAll("text")
     .data(dataArray)
@@ -36,7 +34,6 @@ svg.selectAll("text")
                            // not set dynamically so that it's baseline
                            // with the graph.
 
-// Title
 svg.selectAll("title-text")
     .data(titleArray)
     .enter().append("text")
@@ -46,7 +43,6 @@ svg.selectAll("title-text")
           .attr("y", 330)
           .style('fill', 'white');
 
-// Subtitle
 svg.selectAll("subtitle-text")
     .data(subtitleArray)
     .enter().append("text")
